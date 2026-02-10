@@ -17,7 +17,7 @@ import java.util.Set;
 public class Reservation {
 
     @Id
-    private String idReservation;
+    private Long idReservation;
 
     private Date anneeUniversitaire;
     private boolean estValide;
