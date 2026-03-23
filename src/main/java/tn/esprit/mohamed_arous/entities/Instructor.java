@@ -1,4 +1,5 @@
 package tn.esprit.mohamed_arous.entities;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.Set;
@@ -14,10 +15,10 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Instructor {
+public class Instructor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long numinstructor;
+    private long numInstructor;
     private String firstName;
     private String lastName;
     @Temporal(TemporalType.DATE)

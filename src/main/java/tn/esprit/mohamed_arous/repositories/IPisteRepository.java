@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import tn.esprit.mohamed_arous.entities.Piste;
 
 @Repository
-public interface PisteRepository extends JpaRepository<Piste,Long> {
+public interface IPisteRepository extends JpaRepository<Piste,Long> {
 }

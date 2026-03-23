@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import tn.esprit.mohamed_arous.entities.Registration;
 
 @Repository
-public interface RegistrationRepository extends JpaRepository<Registration,Long> {
+public interface IRegistrationRepository extends JpaRepository<Registration,Long> {
 }

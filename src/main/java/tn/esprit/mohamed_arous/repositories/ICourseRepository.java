@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import tn.esprit.mohamed_arous.entities.Course;
 
 @Repository
-public interface CourseRepository extends JpaRepository<Course,Long> {
+public interface ICourseRepository extends JpaRepository<Course,Long> {
 }
