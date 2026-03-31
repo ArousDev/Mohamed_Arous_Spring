@@ -42,12 +42,10 @@ public class SubscriptionServicesImpl implements ISubscriptionServices {
 
     @Override
     public Set<Subscription> getSubscriptionByType(TypeSubscription type) {
-        // ....
         return subscriptionRepository.findByTypeSub(type);
     }
 
     @Override
     public List<Subscription> retrieveSubscriptionsByDates(LocalDate startDate, LocalDate endDate) {
-        // ......
         return subscriptionRepository.findByStartDateGreaterThanEqualAndEndDateLessThanEqual(startDate, endDate);    }
 }

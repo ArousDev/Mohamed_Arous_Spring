@@ -66,7 +66,6 @@ public class SkierServicesImpl implements ISkierServices {
 
     @Override
     public List<Skier> retrieveSkiersBySubscriptionType(TypeSubscription typeSubscription) {
-        // je sais pas pk ca ne marche pas
         return skierRepository.findBySubscriptionTypeSub(typeSubscription);
     }
 }
