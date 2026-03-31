@@ -74,7 +74,6 @@ public class RegistrationServicesImpl implements IRegistrationServices {
                 throw new RuntimeException("Course is full, max 6 skiers allowed");
             }
 
-            // 4. Check skier age
             int age = Period.between(skier.getDateOfBirth(), LocalDate.now()).getYears(); // assume you have getAge() in Skier
             if ((course.getTypeCourse() == TypeCourse.COLELCTIVE_CHILD && age >= 18) ||
                     (course.getTypeCourse() == TypeCourse.COLELCTIVE_ADULT && age < 18)) {
